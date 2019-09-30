@@ -1,0 +1,78 @@
+<html>
+
+<head>
+
+    <title>
+
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="weather.css">
+</head>
+
+<body onload="currentlocation();">
+  
+
+    <div class="container">
+
+        <div class="flex-container1">
+            <div id="left-flex">
+                <h2 id="week-day">MONDAY</h2>
+
+                <h4 id="temp"></h4>
+            </div>
+            <div id="right-flex">
+
+                <i class="fa fa-bars" aria-hidden="true" id="hamber-id" onclick="menufunction();"></i>
+                <i class="fa fa-times" aria-hidden="true" id="close-btn" onclick="closemenu();"></i>
+
+
+                <h3 id="greeting">Good Morning</h3>
+                <h1 id="place">Good Morning</h1>
+                <img id="image">
+            </div>
+        </div>
+        <div class="flex-container2">
+            <div>
+                <h2 class="futureday"></h2>
+                <img src="" class="future-image">
+                <p class="future-temp"></p>
+            </div>
+            <div>
+                <h2 class="futureday"></h2>
+                <img src="" class="future-image">
+                <p class="future-temp"></p>
+            </div>
+            <div>
+                <h2 class="futureday"></h2>
+                <img src="" class="future-image">
+                <p class="future-temp"></p>
+            </div>
+            <div>
+                <h2 class="futureday"></h2>
+                <img src="" class="future-image">
+                <p class="future-temp"></p>
+            </div>
+            <div>
+                <h2 class="futureday"></h2>
+                <img src="" class="future-image">
+                <p class="future-temp"></p>
+            </div>
+        </div>
+    </div>
+
+    <ul class="nav-menu" id="nav-menu-id">
+        <li><a href="#" id=2643743 onClick="searchWeather(this.id);"> London</a></li>
+        <li><a href="#" id=4887398 onClick="searchWeather(this.id);">Chicago</a></li>
+        <li><a href="#" id=5128581 onClick="searchWeather(this.id);">New york</a></li>
+        <li><a href="#" id=292968 onClick="searchWeather(this.id);">Abu Dhabi</a></li>
+        <li><a href="#" id=2759794 onClick="searchWeather(this.id);">Amsterdem</a></li>
+    </ul>
+    <img id="icon-img">
+
+   
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
