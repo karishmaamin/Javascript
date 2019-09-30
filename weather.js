@@ -29,7 +29,7 @@ function futureweather(result, sourceDate,searchTerm) {
            
            let j=0;
 
-           var mon_sat = ["Monday","Tuesday","Wednesday","Thusday","Friday","Saturday","Sunday"];
+           var mon_sat = ["Sunday","Monday","Tuesday","Wednesday","Thusday","Friday","Saturday"];
 
            let array_day=new Array();
            let array_image=new Array();
@@ -40,7 +40,7 @@ function futureweather(result, sourceDate,searchTerm) {
            let week=new Array();
            let day=new Array();
            let array_week=new Array();
-            for(i=0;i<result.list.length;i=i+8)
+            for(i=8;i<result.list.length;i=i+8)
             {
                 
                 array_day[j]=result.list[i].dt;
@@ -56,8 +56,9 @@ function futureweather(result, sourceDate,searchTerm) {
             for(i=0;i<array_day.length;i++)
             {
                 date_date=new Date(array_day[i]*1000);
+                console.log(date_date);
                 week_week=date_date.getDay();
-               
+                 console.log(week_week);
                 array_week[i]=mon_sat[week_week];
             }
             console.log(date);
